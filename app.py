@@ -245,12 +245,12 @@ elif  pagina_seleccionada == 'Nubes de palabra':
 
 elif pagina_seleccionada == 'Mapa interactivo':
     st.markdown("<h1 style='text-align: center;'>Mapa interactivo por lugar de nacimiento</h1>", unsafe_allow_html=True)
-    st.write('---')
     
     import streamlit.components.v1 as components
-    
-    with open("mapa_politicos.html", "r", encoding="utf-8") as f:
-        html_mapa = f.read()
-    
-    components.html(html_mapa, height=600)
+    try:
+        with open("mapa_politicos.html", "r", encoding="utf-8") as f:
+            html_content = f.read()
+        components.html(html_content, height=700)
+    except FileNotFoundError:
+        st.error("No se encontró el archivo 'mapa_politicos.html'. Asegúrate de haberlo subido correctamente al repositorio.")
     
