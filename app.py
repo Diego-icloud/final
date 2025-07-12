@@ -245,7 +245,7 @@ elif  pagina_seleccionada == 'Nubes de palabra':
 
 elif pagina_seleccionada == 'Mapa interactivo':
     st.markdown("<h1 style='text-align: center;'>Mapa interactivo por lugar de nacimiento</h1>", unsafe_allow_html=True)
-    
+    st.markdown("<div style='text-align: justify; font-size: 20px;'>Explora en este mapa interactivo los lugares de nacimiento de los candidatos presidenciales del 2026.</div>", unsafe_allow_html=True)
     import streamlit.components.v1 as components
     try:
         with open("mapa_politicos.html", "r", encoding="utf-8") as f:
@@ -253,4 +253,6 @@ elif pagina_seleccionada == 'Mapa interactivo':
         components.html(html_content, height=700)
     except FileNotFoundError:
         st.error("No se encontró el archivo 'mapa_politicos.html'. Asegúrate de haberlo subido correctamente al repositorio.")
-    
+     # La función components.html toma como primer argumento el contenido HTML que se desea mostrar.
+    # En este caso, el contenido HTML se lee desde el archivo "mapa_politicos.html".
+    # El argumento height se utiliza para especificar la altura del contenido HTML, en este caso 700 píxeles.
