@@ -249,7 +249,7 @@ elif pagina_seleccionada == 'Mapa interactivo':
     
     import streamlit.components.v1 as components
     
-    with open("mapa_políticos.html", "r", encoding="utf-8") as f:
+    with open("mapa_politicos.html", "r", encoding="utf-8") as f:
         html_mapa = f.read()
     
     components.html(html_mapa, height=600)
