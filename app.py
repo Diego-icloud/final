@@ -170,7 +170,7 @@ elif  pagina_seleccionada == 'Nubes de palabra':
     st.markdown("<h1 style='text-align: center;'>Nubes de palabras: Recopilación de palabras más asociadas a las figuras políticas</h1>", unsafe_allow_html=True)
     
     # Creamos una lista de gráficos
-    graficos_nube = ['Nube de palabras César Acuña Peralta','Nube de palabras Rafael López Aliaga', 'Nube de palabras Keiko Fujimori', 'Nube de palabras Alfonso López-Chau', 'Nube de palabras Fernando Olivera', 'Nube de palabras Veronika Mendoza', 'Nube de palabras Martín Vizcarra', 'Nube de palabras Vladimir Cerrón',]
+    graficos_nube = ['Nube de palabras César Acuña Peralta','Nube de palabras Rafael López Aliaga', 'Nube de palabras Keiko Fujimori', 'Nube de palabras Alfonso López-Chau', 'Nube de palabras Fernando Olivera', 'Nube de palabras Veronika Mendoza', 'Nube de palabras Martín Vizcarra', 'Nube de palabras Vladimir Cerrón', 'Nube de palabras George Forsyth', 'Nube de palabras Dina Boluarte', 'Nube de palabras Adriana Tudela', 'Nube de palabras Guido Bellido', 'Nube de palabras Julio Guzmán', 'Nube de palabras Modesto Montoya', 'Nube de palabras Jorge Pérez, 'Nube de palbras Yohny Lescano']
 
     # Creamos un cuadro de selección en la página de gráficos
     grafico_seleccionado_nube = st.selectbox('Selecciona un gráfico', graficos_nube)
@@ -209,4 +209,36 @@ elif  pagina_seleccionada == 'Nubes de palabra':
     elif grafico_seleccionado_nube == 'Nube de palabras Vladimir Cerrón':
         st.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico muestra una nube de palabras que presenta la recopilación de frecuencias recolectadas sobre la base de noticias relacionadas con las palabras clave con mayor asociación al político.</div>", unsafe_allow_html=True)
         st.image("nube_palabras_vladimircerron.png", caption='Nube de palabras Vladimir Cerrón', width=600)
+        pass
+    elif grafico_seleccionado_nube == 'Nube de palabras George Forsyth':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico muestra una nube de palabras que presenta la recopilación de frecuencias recolectadas sobre la base de noticias relacionadas con las palabras clave con mayor asociación al político.</div>", unsafe_allow_html=True)
+        st.image("nube_george_forsyth.png", caption='Nube de palabras George Forsyth', width=600)
+        pass
+    elif grafico_seleccionado_nube == 'Nube de palabras Dina Boluarte':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico muestra una nube de palabras que presenta la recopilación de frecuencias recolectadas sobre la base de noticias relacionadas con las palabras clave con mayor asociación a la política.</div>", unsafe_allow_html=True)
+        st.image("nube_palabras_dina.png", caption='Nube de palabras Dina Boluarte', width=600)
+        pass
+    elif grafico_seleccionado_nube == 'Nube de palabras Adriana Tudela':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico muestra una nube de palabras que presenta la recopilación de frecuencias recolectadas sobre la base de noticias relacionadas con las palabras clave con mayor asociación a la política.</div>", unsafe_allow_html=True)
+        st.image("nube_adriana_tudela.png", caption='Nube de palabras Adriana Tudela', width=600)
+        pass
+    elif grafico_seleccionado_nube == 'Nube de palabras Guido Bellido':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico muestra una nube de palabras que presenta la recopilación de frecuencias recolectadas sobre la base de noticias relacionadas con las palabras clave con mayor asociación al político.</div>", unsafe_allow_html=True)
+        st.image("nube_guido_bellido.png", caption='Nube de palabras Guido Bellido', width=600)
+        pass
+    elif grafico_seleccionado_nube == 'Nube de palabras Julio Guzmán':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico muestra una nube de palabras que presenta la recopilación de frecuencias recolectadas sobre la base de noticias relacionadas con las palabras clave con mayor asociación al político.</div>", unsafe_allow_html=True)
+        st.image("nube_julio_guzman.png", caption='Nube de palabras Julio Guzmán', width=600)
+        pass
+    elif grafico_seleccionado_nube == 'Nube de palabras Modesto Montoya':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico muestra una nube de palabras que presenta la recopilación de frecuencias recolectadas sobre la base de noticias relacionadas con las palabras clave con mayor asociación al político.</div>", unsafe_allow_html=True)
+        st.image("nube_modesto_montoya.png", caption='Nube de palabras Modesto Montoya', width=600)
+        pass
+    elif grafico_seleccionado_nube == 'Nube de palabras Jorge Pérez':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico muestra una nube de palabras que presenta la recopilación de frecuencias recolectadas sobre la base de noticias relacionadas con las palabras clave con mayor asociación al político.</div>", unsafe_allow_html=True)
+        st.image("nube_de_palabras_jorge.png", caption='Nube de palabras Jorge Pérez', width=600)
+        pass
+    elif grafico_seleccionado_nube == 'Nube de palabras Yohny Lescano':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico muestra una nube de palabras que presenta la recopilación de frecuencias recolectadas sobre la base de noticias relacionadas con las palabras clave con mayor asociación al político.</div>", unsafe_allow_html=True)
+        st.image("nube_lescano.png", caption='Nube de palabras Yohny Lescano', width=600)
         pass
