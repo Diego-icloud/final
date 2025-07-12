@@ -170,7 +170,7 @@ elif  pagina_seleccionada == 'Nubes de palabra':
     st.markdown("<h1 style='text-align: center;'>Nubes de palabras: Recopilación de palabras más asociadas a las figuras políticas</h1>", unsafe_allow_html=True)
     
     # Creamos una lista de gráficos
-    graficos_nube = ['Nube de palabras César Acuña Peralta','Nube de palabras Rafael López Aliaga', 'Nube de palabras Keiko Fujimori', 'Nube de palabras Alfonso López-Chau', 'Nube de palabras Fernando Olivera', 'Nube de palabras Veronika Mendoza', 'Nube de palabras Martín Vizcarra', 'Nube de palabras Vladimir Cerrón', 'Nube de palabras George Forsyth', 'Nube de palabras Dina Boluarte', 'Nube de palabras Adriana Tudela', 'Nube de palabras Guido Bellido', 'Nube de palabras Julio Guzmán', 'Nube de palabras Modesto Montoya', 'Nube de palabras Jorge Pérez, 'Nube de palbras Yohny Lescano']
+    graficos_nube = ['Nube de palabras César Acuña Peralta','Nube de palabras Rafael López Aliaga', 'Nube de palabras Keiko Fujimori', 'Nube de palabras Alfonso López-Chau', 'Nube de palabras Fernando Olivera', 'Nube de palabras Veronika Mendoza', 'Nube de palabras Martín Vizcarra', 'Nube de palabras Vladimir Cerrón', 'Nube de palabras George Forsyth', 'Nube de palabras Dina Boluarte', 'Nube de palabras Adriana Tudela', 'Nube de palabras Guido Bellido', 'Nube de palabras Julio Guzmán', 'Nube de palabras Modesto Montoya', 'Nube de palabras Jorge Pérez, 'Nube de palabras Yohny Lescano']
 
     # Creamos un cuadro de selección en la página de gráficos
     grafico_seleccionado_nube = st.selectbox('Selecciona un gráfico', graficos_nube)
