@@ -242,3 +242,15 @@ elif  pagina_seleccionada == 'Nubes de palabra':
         st.markdown("<div style='text-align: justify; font-size: 20px;'>El gráfico muestra una nube de palabras que presenta la recopilación de frecuencias recolectadas sobre la base de noticias relacionadas con las palabras clave con mayor asociación al político.</div>", unsafe_allow_html=True)
         st.image("nube_lescano.png", caption='Nube de palabras Yohny Lescano', width=600)
         pass
+
+elif pagina_seleccionada == 'Mapa interactivo':
+    st.markdown("<h1 style='text-align: center;'>Mapa interactivo de ubicación y denuncias</h1>", unsafe_allow_html=True)
+    st.write('---')
+    
+    import streamlit.components.v1 as components
+    
+    with open("mapa_interactivo.html", "r", encoding="utf-8") as f:
+        html_mapa = f.read()
+    
+    components.html(html_mapa, height=600)
+    
